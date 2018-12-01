@@ -31,7 +31,7 @@ class PortfoliosController < ApplicationController
       if @portfolio_item.update(params.require(:portfolio).permit(:title, :subtitle, :body))
         format.html { redirect_to portfolios_path, notice: "You have successfully updated your portfolio " }
       else
-        format.html { render :new }
+        format.html { render :edit }
       end
     end
   end
