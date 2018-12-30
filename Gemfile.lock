@@ -1,9 +1,3 @@
-GIT
-  remote: https://github.com/chrissaguilar/csa_view_tool
-  revision: 97fc0cd1ce5b1c2bc8cfc604ce508fe313e2bd8f
-  specs:
-    csa_view_tool (0.1.0)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -71,6 +65,7 @@ GEM
     coffee-script-source (1.12.2)
     concurrent-ruby (1.1.4)
     crass (1.0.4)
+    csa_view_tool (0.1.0)
     devise (4.5.0)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
@@ -220,7 +215,7 @@ DEPENDENCIES
   bootstrap (~> 4.2.1)
   byebug
   coffee-rails (~> 4.2)
-  csa_view_tool!
+  csa_view_tool (~> 0.1.0)
   devise (~> 4.5)
   friendly_id (~> 5.2.0)
   jbuilder (~> 2.5)
