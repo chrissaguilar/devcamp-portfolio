@@ -58,3 +58,5 @@ gem 'friendly_id', '~> 5.2.0'
 gem 'devise', '~> 4.5'
 gem 'bootstrap', '~> 4.2.1'
 gem 'jquery-rails'
+gem 'csa_view_tool', git: 'https://github.com/chrissaguilar/csa_view_tool'
+

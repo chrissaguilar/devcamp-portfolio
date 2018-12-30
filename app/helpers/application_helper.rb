@@ -16,7 +16,7 @@ module ApplicationHelper
     end
   end
 
-  def sample_helper
-    content_tag(:div, "My Sample Content Tag", class: "my-sample-class")
+  def copyright_generator
+    CsaViewTool::Renderer.copyright "Christopher Aguilar", "All rights reserved"
   end
 end

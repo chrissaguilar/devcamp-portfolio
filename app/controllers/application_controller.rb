@@ -5,4 +5,9 @@ class ApplicationController < ActionController::Base
   include CurrentUserConcern
   include DefaultPageContent
 
+  before_action :set_copyright
+
+  def set_copyright
+    @copyright = CsaViewTool::Renderer.copyright "Christopher Aguilar", "All rights reserved"
+  end
 end
