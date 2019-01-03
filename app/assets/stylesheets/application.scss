@@ -175,12 +175,29 @@ body {
   padding-left: 15px;
 }
 
-.auth-links a {
+.auth-links-back a {
   color: #000;
   padding-left: 15px;
+}
+
+.auth-links a {
+  color: #000;
 }
 
 .register-text {
   text-align: right;
 }
+
+.login > .card {
+  width: 22rem;
+  margin: auto;
+}
+
+.card-block h2 {
+  text-align: center;
+}
+
+
+
+
 
