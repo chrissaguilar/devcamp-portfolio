@@ -1,4 +1,9 @@
 <%= form_for(@portfolio_item) do |f| %>
+  <% if @portfolio_item.errors.any? %>
+    <% @portfolio_item.errors.full_messages.each do |error| %>
+      <%= js add_gritter(error, :title => "Chris Aguilar Portfolio", sticky: false, time: 5000) %>
+    <% end %>
+  <% end %>
 
   <div class="row">
     <div class="col-md-6">
@@ -48,7 +53,7 @@
     <p> </p>
 
     <div class="form-group">
-      <%= f.submit "Update Portfolio", class: 'btn btn-primary' %>
+      <%= f.submit "Save Portfolio Item", class: 'btn btn-primary' %>
     </div>
   </div>
 
