@@ -11,6 +11,18 @@
         <%= f.label :subtitle %>
         <%= f.text_field :subtitle, class: 'form-control' %>
       </div>
+
+      <div class="form-group">
+        <label class="btn btn-primary">
+          Upload Main Image <%= f.file_field :main_image, style: 'display:none' %>
+        </label>
+      </div>
+
+      <div class="form-group">
+        <label class="btn btn-success">
+          Upload Thumb Image <%= f.file_field :thumb_image, style: 'display:none' %>
+        </label>
+      </div>
     </div>
 
     <div class="col-md-6">
@@ -21,11 +33,9 @@
     </div>
   </div>
 
-  <p></p>
-
-  <h3>Technologies Used:</h3>
 
   <div class="col-md-12">
+    <h2>Technologies Used:</h2>
     <div>
       <%= f.fields_for :technologies do |technology_form| %>
         <div class="form-group">
