@@ -1,7 +1,7 @@
 <%= form_with(model: blog, local: true) do |f| %>
   <% if blog.errors.any? %>
     <% blog.errors.full_messages.each do |error| %>
-      <%= js add_gritter(error, :title => "Chris Aguilar Portfolio", sticky: false, time: 5000) %>
+      <%= alert_generator error %>
     <% end %>
   <% end %>
 
@@ -16,7 +16,7 @@
   </div>
 
   <div class="form-group">
-    <%= f.submit 'Create Blog', class: 'btn btn-primary' %>
+    <%= f.submit 'Save Blog', class: 'btn btn-primary' %>
   </div>
 <% end %>
 
