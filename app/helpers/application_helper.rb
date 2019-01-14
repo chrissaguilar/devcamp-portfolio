@@ -62,6 +62,29 @@ module ApplicationHelper
   end
 end
 
+def alerts
+  alert = (flash[:alert] || flash[:error] || flash[:notice])
+
+  if alert
+    alert_generator alert
+  end
+end
+
+def alert_generator msg
+  js add_gritter(msg, :title => "Chris Aguilar Portfolio", sticky: false, time: 5000)
+end
+
+
+
+
+
+
+
+
+
+
+
+
 # <#{tag_type}><a href="#{root_path}" class="#{style} #{active? root_path}">Home</a></#{tag_type}>
 #    <#{tag_type}><a href="#{about_me_path}" class="#{style} #{active? about_me_path}">About Me</a></#{tag_type}>
 #    <#{tag_type}><a href="#{contact_path}" class="#{style} #{active? contact_path}">Contact</a></#{tag_type}>
