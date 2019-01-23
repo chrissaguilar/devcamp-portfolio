@@ -78,6 +78,12 @@ def alert_generator msg
   js add_gritter(msg, :title => "Chris Aguilar Portfolio", sticky: false, time: 5000)
 end
 
+def progressbar_colors
+  colors = %w(bg-primary bg-success bg-info bg-warning bg-danger)
+  random_number = rand(5)
+  colors[random_number]
+end
+
 
 
 
