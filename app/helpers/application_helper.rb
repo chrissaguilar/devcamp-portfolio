@@ -9,10 +9,10 @@ module ApplicationHelper
     end
   end
 
-  def source_helper(layout_name)
+  def source_helper styles
     if session[:source]
-      greeting = "Thank you for visiting us from #{session[:source]} and you are on the #{layout_name} layout"
-      content_tag(:p, greeting, class: "source-greeting")
+      greeting = "Thanks for visiting us from #{session[:source]}, please feel free to #{ link_to 'contact me', contact_path} if you would like to work together."
+      content_tag(:div, greeting.html_safe, class: styles )
     end
   end
 
@@ -76,6 +76,12 @@ end
 
 def alert_generator msg
   js add_gritter(msg, :title => "Chris Aguilar Portfolio", sticky: false, time: 5000)
+end
+
+def progressbar_colors
+  colors = %w(bg-primary bg-success bg-info bg-warning bg-danger)
+  random_number = rand(5)
+  colors[random_number]
 end
 
 

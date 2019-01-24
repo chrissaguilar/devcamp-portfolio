@@ -25,6 +25,11 @@
   </div>
 </div>
 
+<div class="container">
+  <%= link_to "Create Portfolio Item", new_portfolio_path, class: "btn btn-success mt-4" if logged_in?(:site_admin) %>
+</div>
+
+
 <!--<li><%#= link_to "Home", root_path %></li>-->
 <!--<li><%#= link_to "About Me", about_me_path %></li>-->
 <!--<li><%#= link_to "Contact", contact_path %></li>-->
