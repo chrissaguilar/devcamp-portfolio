@@ -33,6 +33,9 @@ body {
   font-family: 'Maven Pro', serif;
 }
 body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
   color: #fff;
   text-align: center;
   text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
@@ -144,11 +147,11 @@ h6, .h6 {
 @media (min-width: 40em) {
   /* Pull out the header and footer */
   .masthead {
-    position: fixed;
+    //position: fixed;
     top: 0;
   }
   .mastfoot {
-    position: fixed;
+    //position: fixed;
     bottom: 0;
   }
   /* Start the vertical centering */
@@ -191,7 +194,8 @@ h6, .h6 {
 }
 
 .auth-links a {
-  color: #000;
+  color: white;
+  padding-left: 15px;
 }
 
 .register-text {
@@ -223,7 +227,7 @@ h6, .h6 {
   z-index: -100;
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
-  background: image-url('home_bg.png') no-repeat;
+  //background: image-url('home_bg.png') no-repeat;
   background-size: cover;
 }
 
@@ -245,12 +249,17 @@ h6, .h6 {
 }
 
 .app-card-container {
-  color: black;
+  color: white;
   text-align: left;
 }
 
 .app-card-container > .card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #333;
   padding: 40px;
+  opacity: 0.9;
 }
 
 .profile-img {
@@ -258,7 +267,7 @@ h6, .h6 {
 }
 
 .app-card-container a {
-  color: blue;
+  color: white;
 }
 
 .i-frame {
@@ -268,6 +277,7 @@ h6, .h6 {
 .card-block {
   margin-top: 5px;
   margin-bottom: 5px;
+  color: white;
 }
 
 .skill {
@@ -281,4 +291,30 @@ h6, .h6 {
 
 .jobs-img {
   border: 2px grey solid;
+}
+
+.about-me-buttons {
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.card-block-login {
+  background-color: #333;
+  opacity: 0.9;
+  color: white;
+}
+
+.about-info {
+  color: #000;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.h1-home-page {
+  text-align: center;
+}
+
+.home-page-card {
+  background-color: #333333;
+  opacity: 0.9;
 }

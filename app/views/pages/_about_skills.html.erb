@@ -1,0 +1,42 @@
+<div class="collapse" id="skills">
+  <div class="card card-block about-info">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="skills">
+          <% @skills.each do |skill| %>
+            <div class="skill">
+              <h4><%= skill.title %></h4>
+              <div class="progress">
+                <div
+                  class="progress-bar progress-bar-striped progress-bar-animated bg-info %>"
+                  role="progressbar"
+                  aria-valuenow="<%= skill.percent_utilized %>"
+                  aria-valuemax="100"
+                  style="width: <%= skill.percent_utilized %>%"
+                ></div>
+              </div>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<%# @skills.each do |skill| %>
+<!--  <div class="skill">-->
+<!--    <h4><%#= skill.title %></h4>-->
+<!--    <div class="progress">-->
+<!--      <div-->
+<!--        class="progress-bar progress-bar-striped progress-bar-animated bg-info %>"-->
+<!--        role="progressbar"-->
+<!--        aria-valuenow="<%#= skill.percent_utilized %>"-->
+<!--        aria-valuemax="100"-->
+<!--        style="width: <%#= skill.percent_utilized %>%"-->
+<!--      ></div>-->
+<!--    </div>-->
+<!--  </div>-->
+<%# end %>
